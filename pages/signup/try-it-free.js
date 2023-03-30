@@ -124,7 +124,7 @@ export default function SignUpSide() {
           </Typography>
 
           <Typography>
-            You'll be up & running in 2 minutes 
+            You ll be up & running in 2 minutes 
           </Typography>
 
           </Box>
