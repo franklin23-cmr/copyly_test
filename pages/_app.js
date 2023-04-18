@@ -20,13 +20,21 @@ import Head from "next/head";
 // import Test from "../components/Shared/test";
 import Test_copy from "../components/Shared/Test_copy";
 
-import { appWithTranslation } from 'next-i18next'
+
+import GoTop from "../components/Shared/GoTop";
+import { appWithTranslation } from "next-i18next";
+
+
 
 
 function MyApp({ Component, pageProps }) {
   React.useEffect(() => {
     AOS.init();
   }, []);
+
+    // const { t: translate } = useTranslation('Home')
+
+
   return (
     <>
       <Head>
@@ -34,20 +42,28 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+
         <title> copyly </title>
+
+        <title>
+            Copyly – The best AI Copywriter & AI Content generator
+        </title>
+
+
       </Head>
       <Component {...pageProps} />
 
       {/* Go Top Button */}
-      
+
       {/* <GoTop scrollStepInPx="150" delayInMs="30.50" /> */}
+      <GoTop scrollStepInPx="150" delayInMs="30.50" />
 
       {/* {change language} */}
-      {/* <Language scrollStepInPx="50" delayInMs="10.50" /> */}
-      {/* <Test scrollStepInPx="50" delayInMs="10.50"  />  */}
+
       <Test_copy  scrollStepInPx="50" delayInMs="10.50" />
     </>
   );
 }
+
 
 export default appWithTranslation(MyApp);

@@ -3,115 +3,103 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
 const Services = () => {
-  const {t : translate} = useTranslation("Home")
+
+ 
+  const {t:translate} = useTranslation('Home')
+
   return (
     <>
       <div id="features" className="ai-services-area with-linear-gradient-color pt-100 pb-100">
-        <div className="container">
+        <div className="container ">
           <div className="section-title with-underline-text">
             <h2>
-            {translate("We Offer Professional")}  <b>  {translate("Solutions")}</b>   {translate("With Artificial Intelligence")} 
+            {translate("Write")}  <b>  {translate("better")}</b>   {translate("content 10x faster")}
             </h2>
             <p>
-            {translate("")}
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. A ac, ut
-              eget pellentesque nulla viverr.
+            {translate("Say ‘goodbye’ to the blank page. Generate high-converting copy for all your campaigns with just a few clicks. Leverage AI to write your content and copy in seconds")}
             </p>
           </div>
 
-          <div className="row justify-content-center">
+          <div className="row  justify-content-center">
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-services-card">
+              <div className="  single-services-card  align-self-stretch  ">
                 <div className="image-icon">
-                  <img src="/images/home-six/services/icon1.png" alt="icon" />
+                 <i className="fa fa-microchip fa-2xl" style={{color: "#ff4800"}}></i>
                 </div>
                 <h3>
-                  <Link href="/service-details"> {translate("Powered by AI")}</Link>
+                   {translate("Powered by AI")} 
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit am adipiscing elit sed do eiusmod lorem
-                  ipsum dolor sit am adipiscing elit sed do eiusmod.
+                  {translate("The GPT-4 AI language model is nothing like you've seen before natural, unique and creative")} 
                 </p>
-                <Link href="/service-details" className="read-btn">
-                {translate("Read More")}
-                  
-                </Link>
+                 
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-services-card">
+            <div className="  col-lg-4 col-md-6 col-sm-6">
+              <div className="  single-services-card align-self-stretch   ">
                 <div className="image-icon bg-two">
-                  <img src="/images/home-six/services/icon2.png" alt="icon" />
+
+                  <i className="fa fa-sliders fa-2xl" style={{color: "#ff4800"}}></i>
                 </div>
                 <h3>
-                  <Link href="/service-details">{translate("Powerful settings")}</Link>
+                  {translate("Powerful settings")} 
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit am adipiscing elit sed do eiusmod lorem
-                  ipsum dolor sit am adipiscing elit sed do eiusmod.
+                   {translate("Adjust the creativity level or the tone of voice to generate the perfect copy for your business")}
                 </p>
-                <Link href="/service-details" className="read-btn">
-                {translate("Read More")}
-                  
-                </Link>
+
+
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-services-card">
+            <div className=" single-services-card col-lg-4 col-md-6 col-sm-6">
+              <div className=" ">
                 <div className="image-icon bg-three">
-                  <img src="/images/home-six/services/icon3.png" alt="icon" />
+                  <i className="fa fa-globe fa-2xl" style={{color: "#ff4800"}}></i>
                 </div>
                 <h3>
-                  <Link href="/service-details"> {translate("SEO optimized for conversations")}</Link>
+                  {translate("SEO optimized for conversions")} 
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit am adipiscing elit sed do eiusmod lorem
-                  ipsum dolor sit am adipiscing elit sed do eiusmod.
+                  {translate("Trained for SEO, Copyly writes content that attracts search engines to your blog " +
+                      "or website")} 
                 </p>
-                <Link href="/service-details" className="read-btn">
-                  {translate("Read More")}
-                </Link>
+
+
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-services-card">
+            <div className=" align-self-stretch col-lg-4 col-md-6 col-sm-6">
+              <div className=" single-services-card ">
                 <div className="image-icon bg-four">
-                  <img src="/images/home-six/services/icon4.png" alt="icon" />
+
+                  <i className=" fa fa-spell-check fa-2xl" style={{color: "#ff4800"}}></i>
                 </div>
                 <h3>
-                  <Link href="/service-details">{translate("Grammar check")}</Link>
+                   {translate("Grammar check")}
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit am adipiscing elit sed do eiusmod lorem
-                  ipsum dolor sit am adipiscing elit sed do eiusmod.
+                  {translate("Don't let bad grammar break your visitors' trust. Copyly checks and rewrites \n" +
+                      "your content.")} 
                 </p>
-                <Link href="/service-details" className="read-btn">
-                  {translate("Read More")}
-                  
-                </Link>
+
+
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-services-card">
+            <div className=" single-services-card align-self-stretch col-lg-4 col-md-6 col-sm-6">
+              <div className="">
                 <div className="image-icon bg-five">
-                  <img src="/images/home-six/services/icon5.png" alt="icon" />
+                  <i className="fa fa-gear fa-2xl" style={{color: "#ff4800"}} ></i>
                 </div>
                 <h3>
-                  <Link href="/service-details">{translate("50 + Available tools")}</Link>
+                  {translate("50 + Available tools")}
                 </h3>
                 <p>
-                  {translate("")}
-                  Lorem ipsum dolor sit am adipiscing elit sed do eiusmod lorem
-                  ipsum dolor sit am adipiscing elit sed do eiusmod.
+                  {translate("Generate any type of text or content in seconds with our creative writing tool.")} 
+
                 </p>
-                <Link href="/service-details" className="read-btn">
-                  {translate("Read More")}
-                  
-                </Link>
               </div>
             </div>
 

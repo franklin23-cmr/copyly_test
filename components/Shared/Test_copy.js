@@ -36,13 +36,15 @@ function Test_copy(props) {
   }
 
   return (
+
     <div className="scroll-lng">
       {is_visible && (
         // <div className="top-lng">
         //        <p>language</p> <i class="fa-solid fa-chevron-up"></i>
         // </div>
         <div class="dropup">
-          <button class="dropbtn">{locale}</button>
+          <button class="dropbtn">{locale === 'fr' ? "fancais" : "english"}</button>
+
           <div class="dropup-content">
             {/* <a href="#">francais</a>
             <a href="#">english</a> */}

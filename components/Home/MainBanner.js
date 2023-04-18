@@ -1,43 +1,50 @@
 import React from "react";
+
+import Link from "next/link";
+
 import { useTranslation } from "next-i18next";
 
 const MainBanner = () => {
   const { t: translate } = useTranslation('Home')
   return (
     <>
-      <div  className="ml-main-banner-area">
+
+      <div className="ml-main-banner-area">
+
+      {/* <div className="ml-main-banner-area with-linear-gradient-color"> */}
+
+
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="ml-main-banner-content">
                 <span className="sub-title">
-                  {translate("Analysis & Deep Machine Learning With")} <b>{translate('Ai')}</b>
+
+
+                  {translate("Write Better and 10x faster With")} <b>{translate('Ai')}</b>
                 </span>
                 <h1>
-                  {translate('AI and Machine')} <span>{translate('Learning')}</span> {translate('Products Creators')} 
+                  {translate('Create')} <span>{translate('Viral')}</span> {translate('Content, Adcopy & Posts in 5 seconds')}
                 </h1>
                 <p>
-                  {translate("")}
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  {translate("Copyly allows you to generate the best texts, ads and posts in seconds")}
                 </p>
-
-                <form className="banner-form">
-                  <input
-                    type="email"
-                    className="input-newsletter"
-                    placeholder="Enter your email"
-                    name="EMAIL"
-                    required
-                  />
-                  <button type="submit">{translate('Request Demo')}</button>
-                </form>
+    
+                <div className="about-btn" style={{marginTop:"20px"}}>
+                  <Link href="/" className="btn btn-primary ">
+                    {translate("Start Writing for €0")}
+                  </Link>
+                  <p style={{ marginLeft: 10 , marginTop: 3}}>
+                  {translate("No credit card required. No commitment")}
+                </p>
+                </div>
               </div>
             </div>
 
-            <div className="col-lg-6 col-md-12">
+             <div className="col-lg-6 col-md-12">
               <div className="ml-main-banner-image">
-                <img src="/images/home-seven/banner/main.png" alt="image" />
+                <img src="/images/home-eight/banner/main.png" alt="image" />
+
 
                 <div className="circle-shape"></div>
 
@@ -51,6 +58,8 @@ const MainBanner = () => {
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
 

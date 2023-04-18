@@ -6,12 +6,13 @@ import PricingPlan from "../components/Home/PricingPlan";
 import Footer from "../components/Layouts/Footer";
 import TopHeader from "../components/Home/TopHeader";
 import Navbar from "../components/Layouts/Navbar";
-import TopFeaturedSolutions from "../components/Home/TopFeaturedSolutions";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import ServiceDetailsContent from "../components/Home/ServiceDetailsContent";
+
+import AboutAI from "../components/Home/AboutAI";
+import ComputerVisionAI from "../components/Home/ComputerVisionAI";
+ import {serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
 
 const Index = () => {
-
 
   useEffect(()=>{
     console.log(window.location.hostname);
@@ -20,28 +21,33 @@ const Index = () => {
   return (
     <>
     <TopHeader />
-    <Navbar />
+
+     <Navbar />
     <MainBanner />
     <FunFacts />
-
-    <TopFeaturedSolutions />
-    <Services />
-
+    <AboutAI/>
+    <ComputerVisionAI/>
+     <Services />
     <PricingPlan />
-    <Footer />
+    <Footer />    
 
     </>
   );
 };
 
-export async function getStaticProps({ locale }) {
-	return {
-		props: {
-			...(await serverSideTranslations(locale, ['common', 'Home'])),
-			// Will be passed to the page component as props
-		},
-	}
-}
 
 export default Index;
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'Home',
+      ])),
+      // Will be passed to the page component as props
+    },
+  }
+}
+
 

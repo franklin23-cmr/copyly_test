@@ -49,10 +49,14 @@ const Navbar = () => {
           <div className="container-fluid">
             <nav className="navbar navbar-expand-md navbar-light">
               <Link href="/" className="navbar-brand">
+
+
                 <img
                   src="/images/Logos_copyly/new_transparent_copyly_vert_logo_name.png"
                   alt="logo"
                 />
+
+
               </Link>
 
               <button
@@ -84,10 +88,12 @@ const Navbar = () => {
 
                   <li className="nav-item">
                     <Link
-                      href="/#useCase"
-                      className="nav-link"
+
+                      href="/#use_cases"
+                      className={`nav-link ${
+                        currentPath == "/#use_cases" && "active"
+                      }`}
                     >
-                      
                       {translate("use cases")}
                     </Link>
 
@@ -100,12 +106,10 @@ const Navbar = () => {
                       className={`nav-link ${
                         currentPath == "/#features" && "active"
                       }`}
-                    >
-                       
-                      {translate("Features")}
-                    </Link>
 
-                   
+                    >                      
+                      {translate("Features")}
+                    </Link>                   
                   </li>
 
                   <li className="nav-item">
@@ -114,27 +118,40 @@ const Navbar = () => {
                       className={`nav-link ${
                         currentPath == "/#pricing" && "active"
                       }`}
-                    >
-                      
+
+                    >                     
+
                       {translate("Pricing")} 
                     </Link>
 
                   
                   </li>
                 </ul>
-                
+                {/* <div className="ai-about-content-btn">
+                    <li className="about-btn">
+                      <Link href="/about-two" className="btn btn-primary">
+                        Learn More
+                      </Link>
+                    </li>
+                 </div> */}
+
                 {/* others-options */}
-                <div className="others-options">
-                <Link href="https://app.copyly.io/" className="btn btn-primary">
-                    
-                    {translate("Login")}
-                  </Link>
-                  <Link href="https://app.copyly.io/signup/try-it-free." className="btn btn-primary">
-                    
-                    {translate("Get started- it's free")}
-                  </Link>
+                
+                <div className="ai-about-content-btn">
+
+                    <div className="about-btn">
+                      <Link href="http://localhost:3000/" className="btn btn-primary" >
+                        Login
+                      </Link>
+                    </div>
                 </div>
+                  <Link href="http://localhost:3000/signup/try-it-free." className="btn btn-primary">    
+                      {translate("Get started- it's free")}
+                    </Link>
               </div>
+              
+
+
             </nav>
           </div>
         </div>
@@ -176,6 +193,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* End Search Form */}
+
     </>
   );
 };
