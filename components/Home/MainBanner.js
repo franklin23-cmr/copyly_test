@@ -6,7 +6,7 @@ const MainBanner = () => {
   const { t: translate } = useTranslation('Home')
   return (
     <>
-      <div  className="ml-main-banner-area">
+      <div className="ml-main-banner-area">
 
       {/* <div className="ml-main-banner-area with-linear-gradient-color"> */}
 
@@ -24,24 +24,21 @@ const MainBanner = () => {
                 <p>
                   {translate("Copyly allows you to generate the best texts, ads and posts in seconds")}
                 </p>
-                <p>
-                  {translate("No credit card required. No commitment")}
-                </p>
+    
                 <div className="about-btn" style={{marginTop:"20px"}}>
                   <Link href="/" className="btn btn-primary ">
                     {translate("Start Writing for €0")}
                   </Link>
+                  <p style={{ marginLeft: 10 , marginTop: 3}}>
+                  {translate("No credit card required. No commitment")}
+                </p>
                 </div>
-
-               
-
               </div>
             </div>
 
-            {/* <div className="col-lg-6 col-md-12">
+             <div className="col-lg-6 col-md-12">
               <div className="ml-main-banner-image">
                 <img src="/images/home-eight/banner/main.png" alt="image" />
->>>>>>> 29fa82b (remplissage)
 
                 <div className="circle-shape"></div>
 
@@ -51,21 +48,8 @@ const MainBanner = () => {
 
                 <div className="wrap-text">
                   <i className="fa-solid fa-check"></i>
-<<<<<<< HEAD
                   <span>{translate('Get Professional Solutions')}</span>
                 </div>
-              </div>
-            </div>
-=======
-                  <span>{translate('SEO optimized contents')}</span>
-                </div>
-              </div>
-            </div> */}
-             <div className="col-lg-6 col-md-12">
-              <div className="ml-main-banner-wrap-image">
-                <img src="/images/home-eight/banner/main.png" alt="image" />
-
-                <div className="circle-shape"></div>
               </div>
             </div>
 

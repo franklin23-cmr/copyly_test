@@ -20,6 +20,7 @@ const Contact = () => {
         activePageText="Contact"
         bgImgClass="item-bg3"
       />
+     
 
       <ContactFormContent />
 

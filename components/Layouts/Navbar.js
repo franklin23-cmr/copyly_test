@@ -86,13 +86,13 @@ const Navbar = () => {
 
                   <li className="nav-item">
                     <Link
-                      href="/#useCase"
-                      className="nav-link"
+                      href="/#use_cases"
+                      className={`nav-link ${
+                        currentPath == "/#use_cases" && "active"
+                      }`}
                     >
-                      
                       {translate("use cases")}
                     </Link>
-
                   
                   </li>
 
@@ -102,22 +102,17 @@ const Navbar = () => {
                       className={`nav-link ${
                         currentPath == "/#features" && "active"
                       }`}
-                    >
-                       
+                    >                      
                       {translate("Features")}
-                    </Link>
-
-                   
+                    </Link>                   
                   </li>
-
                   <li className="nav-item">
                     <Link
                       href="/#pricing"
                       className={`nav-link ${
                         currentPath == "/#pricing" && "active"
                       }`}
-                    >
-                      
+                    >                     
                       {translate("Pricing")} 
                     </Link>
 

@@ -38,19 +38,19 @@ const AboutAI = () => {
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check"></i>
-                                        {translate("Eye-catching content ")}
+                                        {translate("Eye-catching content")}
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check"></i>
                                         {translate("Conclusions ")}
                                     </li>
                                     <p>
-                                        {translate("Write unlimited SEO optimized and plagiarism free content for your blog or website. ")}
+                                        {translate("Write unlimited SEO optimized and plagiarism free content for your blog or website.")}
                                     </p>
                                 </ul>
                                 <div className="about-btn">
                                     <Link href="" className="btn btn-primary">
-                                        Start Writing for €0
+                                       {translate("Start Writing for €0")} 
                                     </Link>
                                 </div>
                             </div>

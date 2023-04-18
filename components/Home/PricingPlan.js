@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const PricingPlan = () => {
 
-  const {t:translate} = useTranslation("Home")
+  const {t:translate} = useTranslation('Home')
 
  const  openTabSection = (evt, tabNmae) => {
     let i, tabcontent, tablinks;
@@ -27,42 +27,39 @@ const PricingPlan = () => {
     evt.currentTarget.className += "current";
   };
 
-  
-
   return (
     <>
       <div id="pricing" className="ai-pricing-area pt-100 pb-70">
         <div className="container">
           <div className="section-title with-underline-text">
             <h2>
-            {translate("Start writing")}<b>{translate("10x faster")} </b>{translate(" with AI")}
+            {translate("Start writing")} <b> {translate(" 10x faster")} </b>{translate(" with AI")}
             </h2>
             <p>
-              {translate("Simple and affordable pricing. Boost your business with a powerful, reliable and \n" +
-                  "complete tool adapted to the creation of unique content")}
+              {translate("Simple and affordable pricing. Boost your business with a powerful, reliable and complete tool adapted to the creation of unique content")}
             </p>
           </div>
-
           <div className="tab pricing-tab pricing-bg-color">
                 <div className="plans-btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14"><g fill="none" stroke="#ff4800" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 10.5l3 3l3-3"/><path d="M11.5.5h-2a4 4 0 0 0-4 4v9"/></g></svg>
                     <div className="plans_tbn_ajust">
-                      <p>{translate("Save up to 10%")}</p>
+                      <p>{translate("Save up to 18%")}</p>
+                      <div className="ai-about-content-btn">
+
+                   
+                </div>
                     </div>
                 </div>
               <ul className="tabs">
                 <li
                   className="current"
-                  onClick={(e) => openTabSection(e, "tab1")}
-                >
+                  onClick={(e) => openTabSection(e, "tab1")}>
                   {translate("Monthly Plan")}
                 </li> 
                 <li onClick={(e) => openTabSection(e, "tab2")}>
                  {translate("Yearly Plan")} 
                 </li>
-              </ul>
-
-              
+              </ul>           
               <div className="tab-content">
                 <div id="tab1" className="tabs-item">
                   <div className="row">
@@ -71,51 +68,53 @@ const PricingPlan = () => {
 
                     <div className="col-lg-4 col-md-6">
                       <div className="single-pricing-box">
-                        <br/>
+
                         <div className="pricing-header">
                         <h3>{translate("Free")}</h3>
                            <p>
                            {translate("No credit card required. No commitment")}
-                             <br /> 
                            </p>
                         </div>
-<br/>
+
                         <div className="price">
-                        €0 <span>/m</span>
+                        {translate("€0")} <span>/mo</span>
                         </div>
-<br/>
+
                         <div className="buy-btn">
                            <Link href="/contact" className="btn btn-primary">
-                           {translate(" Get started For €0")}
+                           {translate("Get started For €0")}
                            </Link>
                          </div>
-<br/>
                         <ul className="pricing-features">
                            <li>
-                             <i className="fa-solid fa-check"></i>{translate("300 words")}
+                             <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> 3000 {translate("words")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i>{translate("1 user seat")}
+                             <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i>1 {translate("user seat")}
                            </li>
                            <li>
-                            <i className="fa-solid fa-check"></i> {translate("1 project")}
+                            <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i>  1 {translate("project")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> {translate("all copywriting tools")}
+                             <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> {translate("all copywriting tools")}
                            </li>
                            <li>
-                             <i className="fas fa-times"></i> {translate("25+ language")}
+                             <i className="fas fa-times" style={{color: "#E8346F"}}></i> 25+ {translate("languages")}
                            </li>
                            <li>
-                           <i className="fas fa-times"></i> {translate("Plagiarism checker")}
+                           <i className="fas fa-times"  style={{color: "#E8346F"}}></i> {translate("Plagiarism checker")}
                            </li>
                            <li>
-                             <i className="fas fa-times"></i> {translate("Grammar checker")}
+                             <i className="fas fa-times"  style={{color: "#E8346F"}}></i> {translate("Grammar checker")}
                            </li>
                            <li>
-                             <i className="fas fa-times"></i>{translate("SEO Mode")}
+                             <i className="fas fa-times"  style={{color: "#E8346F"}}></i>{translate("SEO Mode")}
                            </li>
-                         </ul>
+                        </ul>
+                        <br/>    
+                        <br/>
+                        <br/>    
+                          
                       </div>
                     </div>
 
@@ -125,60 +124,61 @@ const PricingPlan = () => {
 
                     <div className="pricing-header">
                       <h3>{translate("Premium")}</h3>
-                      <p>{translate(" No commitment.")} <br /> </p>
-
-                    </div>
-                    
+                      <p>{translate("No commitment.")} <br /> </p>
+                   </div>                   
                          <div className="price">
-                           $45 <span>/mo</span> 
+                           {translate("€45")} <span>/mo</span> 
                          </div>
 
                         <div className="buy-btn">
                            <Link href="#" className="btn btn-primary">
-                           {translate(" Start free trial")}
+                           {translate("Start free trial")}
                            </Link>
                          </div>
 
-                                                 <ul className="pricing-features">
-                          
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("Unlimited words")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("All copywriting tools")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                       {translate(" 5 user seats")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                       {translate("25+ languages ")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("Plagiarism checker")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("Grammar checker")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("SEO Mode")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("Priority email support")}
-                                                     </li>
-                                                    
-                                                   </ul>
-
-                    <div className="tag">POPULAR</div>
+                <ul className="pricing-features">
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("Unlimited words")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                      5 {translate("user seats")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("Unlimited projects")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("All copywriting tools")}
+                    </li>
                     
-                </div>            
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                      25+  {translate("languages")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> 
+                    {translate("Plagiarism checker")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("Grammar checker")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("SEO Mode")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("Priority email support")}
+                    </li>                
+                </ul>
+                <br/>    
+                <br/>                       
+                    <div className="tag">{translate("POPULAR")}</div>                   
+                </div>                            
             </div>
 
                            {/*Businness Plan monthly  */}
@@ -192,7 +192,7 @@ const PricingPlan = () => {
                          </div>
 
                         <div className="price">
-                           $99 <span>/m</span> 
+                           {translate("€99")} <span>/mo</span> 
                          </div>
 
                          <div className="buy-btn">
@@ -203,47 +203,65 @@ const PricingPlan = () => {
 
                          <ul className="pricing-features">
                            <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                               {translate("Unlimited words")}
-                            
                           </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
-                             {translate(" 25 user seats")}
+                             <i className="fa-solid fa-check" 
+                             style={{color: "#03B5A9"}}
+                             ></i> 
+                              25 {translate("user seats")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
-                            {translate("Unlimited words")}
-                           </li>
-                           <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                             {translate("Unlimited Projects")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                             {translate("All copywriting tools")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
-                             {translate("25+ languages")}
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
+                              25+ {translate("languages")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                            {translate("Plagiarism checker")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
-                            {translate("Plagiarism checker")}
+                             <i className="fa-solid fa-check" 
+                             style={{color: "#03B5A9"}}
+                             ></i> 
+                            {translate("Grammar checker")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                             {translate("SEO Mode")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
-                            {translate("SEO Mode")}
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
+                            {translate("Priority email support")}
                            </li>
-                          
+                           <li>
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
+                            {translate("API Access")}
+                           </li>
                          </ul>
 
                       </div>
@@ -252,123 +270,125 @@ const PricingPlan = () => {
                 </div>
                 <div id="tab2" className="tabs-item">
                   <div className="row">
-                    <br/>
+                    
                     <div className="col-lg-4 col-md-6">
+
+
+
                       {/* Free plan yearly */}
                        <div className="single-pricing-box">
                         <div className="pricing-header">
                         <h3>{translate("Free")}</h3>
                            <p>
-                           {translate("No credit card required. No commitment")}
-                             <br /> 
+                           {translate("No credit card required. No commitment")}             
                            </p>
                         </div>
-<br/>
+
                         <div className="price">
-                        €0 <span>/mo</span>
+                        {translate("€0")} <span>/mo</span>
                         </div>
 
                         <div className="buy-btn">
-                           <Link href="/contact" className="btn btn-primary">
+                           <Link href="/" className="btn btn-primary">
                            {translate(" Get started For €0")}
                            </Link>
                          </div>
 
-                        <ul className="pricing-features">
+                       <ul className="pricing-features">
                            <li>
-                             <i className="fa-solid fa-check"></i>{translate("300 words")}
+                             <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i>3000 {translate("words")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i>{translate("1 user seat")}
+                             <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> 1  {translate("user seat")}
                            </li>
                            <li>
-                            <i className="fa-solid fa-check"></i> {translate("1 project")}
+                            <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> 1 {translate(" project")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> {translate("all copywriting tools")}
+                             <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> {translate("all copywriting tools")}
                            </li>
                            <li>
-                             <i className="fas fa-times"></i> {translate("25+ language")}
+                             <i className="fas fa-times" style={{color: "#E8346F"}}></i>25+  {translate("languages")}
                            </li>
                            <li>
-                           <i className="fas fa-times"></i> {translate("Plagiarism checker")}
+                           <i className="fas fa-times"  style={{color: "#E8346F"}}></i> {translate("Plagiarism checker")}
                            </li>
                            <li>
-                             <i className="fas fa-times"></i> {translate("Grammar checker")}
+                             <i className="fas fa-times"  style={{color: "#E8346F"}}></i> {translate("Grammar checker")}
                            </li>
                            <li>
-                             <i className="fas fa-times"></i>{translate("SEO Mode")}
+                             <i className="fas fa-times"  style={{color: "#E8346F"}}></i>{translate("SEO Mode")}
                            </li>
-                         </ul>
+                        </ul>
+                        <br/>    
+                        <br/>
+                        <br/>    
+                          
                       </div>
                     </div>
                   
                   {/* Premium plan yearly */}
                     <div className="col-lg-4 col-md-6">
                 <div className="single-pricing-box active">
-
-                    <div className="pricing-header">
-                    <br />
+                    <div className="pricing-header">                
                       <h3>{translate("Premium")}</h3>
                       <p>{translate(" No commitment.")} <br /> </p>
-
                     </div>
                     
                          <div className="price">
-                          
-                           $29 <span>/y</span> 
+                           {translate("€29")} <span>/mo</span> 
                          </div>
-                         <br/>
+                         
                         <div className="buy-btn">
                            <Link href="#" className="btn btn-primary">
                            {translate(" Start free trial")}
                            </Link>
                          </div>
-                          
-                                                 <ul className="pricing-features">
-                                                     
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("Unlimited words")}
-                                                     </li>
-                                                    
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("All copywriting tools")}
-                                                     </li>
-
-                                                  
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                       {translate(" 5 user seats")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                       {translate("25+ languages ")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("Plagiarism checker")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("Grammar checker")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("SEO Mode")}
-                                                     </li>
-                                                     <li>
-                                                       <i className="fa-solid fa-check"></i> 
-                                                      {translate("Priority email support")}
-                                                     </li>
-                                                    
-                                                   </ul>
-
-                    <div className="tag">POPULAR</div>
+                         <ul className="pricing-features">
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("Unlimited words")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                      {translate(" 5 user seats")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("Unlimited projects")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("All copywriting tools")}
+                    </li>
                     
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                      25+ {translate("languages ")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> 
+                    {translate("Plagiarism checker")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("Grammar checker")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("SEO Mode")}
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
+                    {translate("Priority email support")}
+                    </li>                
+                </ul>
+                <br/>    
+                <br/> 
+                    <div className="tag">{translate("POPULAR")}</div>                   
                 </div>            
             </div>
+
 
               {/* Businness Plan yearly */}
                     <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
@@ -376,12 +396,12 @@ const PricingPlan = () => {
                      <div className="pricing-header">
                            <h3>{translate("Business")}</h3>
                            <p>
-                             {translate("No commitment.")} <br /> 
+                             {translate("No commitment.")} 
                            </p>
                          </div>
 
                         <div className="price">
-                        €65 <span>/y</span> 
+                        €65 <span>/mo</span> 
                          </div>
 
                          <div className="buy-btn">
@@ -390,51 +410,69 @@ const PricingPlan = () => {
                            </Link>
                          </div>
 
-                         <ul className="pricing-features">
+                          <ul className="pricing-features">
                            <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                               {translate("Unlimited words")}
-                            
                           </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check" 
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                              {translate(" 25 user seats")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
-                            {translate("Unlimited words")}
-                           </li>
-                           <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                             {translate("Unlimited Projects")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                             {translate("All copywriting tools")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
-                             {translate("25+ languages")}
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
+                             25+ {translate("languages")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                            {translate("Plagiarism checker")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
-                            {translate("Plagiarism checker")}
+                             <i className="fa-solid fa-check" 
+                             style={{color: "#03B5A9"}}
+                             ></i> 
+                            {translate("Grammar checker")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
                             {translate("SEO Mode")}
                            </li>
                            <li>
-                             <i className="fa-solid fa-check"></i> 
-                            {translate("SEO Mode")}
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
+                            {translate("Priority email support")}
                            </li>
-                          
+                           <li>
+                             <i className="fa-solid fa-check"
+                             style={{color: "#03B5A9"}}
+                             ></i> 
+                            {translate("API Access")}
+                           </li>
                          </ul>
-
+ 
                       </div>
                     </div>
                   </div>

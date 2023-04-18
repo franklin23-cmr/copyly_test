@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 const Footer = () => {
   const {t:translate} = useTranslation("Home")
@@ -20,17 +20,13 @@ const Footer = () => {
               >
                 <div className="logo">
                   <Link href="/">
-
                     <img width={60} height={60}  src="/images/Logos_copyly/transparent_copyly_logo.png" alt="image" />
                   </Link>
                   <p>
-                   {translate(` Automatically generate blog posts, website copy, landing pages and ad copy 
-                        for your business in seconds. Use the power of Copyly, the most advanced AI writer, to 
-                        increase your traffic and productivity `)}
+                   {translate("Automatically generate blog posts, website copy, landing pages and ad copy for your business in seconds. Use the power of Copyly, the most advanced AI writer, to increase your traffic and productivity")}
 
                   </p>
                 </div>
-
                 <ul className="social">
                   <li>
                     <a href="https://www.facebook.com/" target="_blank">
@@ -61,25 +57,22 @@ const Footer = () => {
                 className="single-footer-widget"
                 data-aos="fade-in"
                 data-aos-duration="1200"
-                data-aos-delay="200"
+                data-aos-delay="300"
               >
-                <h3>Services</h3>
+                <h3>{translate("Use cases")}</h3>
 
-                <ul className="footer-services-list">
+                <ul className="quick-links-list">
                   <li>
-                    <Link href="/service-details">Product Engineering</Link>
+                    {translate("Social Media & Ads")}
                   </li>
                   <li>
-                    <Link href="/service-details">UX/UI Design</Link>
+                    {translate("Website SEO")}
                   </li>
                   <li>
-                    <Link href="/service-details">Big Data Analysis</Link>
+                    {translate("Ecommerce copy")}
                   </li>
                   <li>
-                    <Link href="/service-details">Desktop Applications</Link>
-                  </li>
-                  <li>
-                    <Link href="/service-details">Mobile Applications</Link>
+                    {translate("Blog content")}
                   </li>
                 </ul>
               </div>
@@ -90,30 +83,17 @@ const Footer = () => {
                 className="single-footer-widget"
                 data-aos="fade-in"
                 data-aos-duration="1200"
-                data-aos-delay="300"
+                data-aos-delay="200"
               >
-                <h3>{translate("Use cases")}</h3>
+                <h3>{translate("Quick Links")}</h3>
 
-                <ul className="quick-links-list">
+                <ul className="footer-services-list">
                   <li>
-                    <Link href="/">{translate("Social Media & Ads")}</Link>
-                  </li>
-                  <li>
-                    <Link href="/">{translate("Website SEO")}</Link>
+                    <Link href="/#pricing">{translate("Pricing")}</Link>
                   </li>
                   <li>
                     <Link href="/contact">{translate("contact")}</Link>
-                  </li>
-                  <li>
-                    <Link href="/">{translate("Ecommerce copy")}</Link>
-                  </li>
-                  <li>
-                    <Link href="/services">{translate("Blog content")}</Link>
-                  </li>
-                  <li>
-                    <Link href="/pricing">{translate("pricing")}</Link>
-
-                  </li>
+                  </li>          
                 </ul>
               </div>
             </div>
@@ -126,7 +106,7 @@ const Footer = () => {
                 data-aos-duration="1200"
                 data-aos-delay="400"
               >
-                <h3>Contacts</h3>
+              <h3>{translate("Contacts")}</h3>
 
                 <ul className="footer-contact-list">                 
                   <li>
@@ -146,18 +126,17 @@ const Footer = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-6 col-sm-6">
                 <p>
-                  Copyright &copy;{currentYear} Copyly. {translate("All Rights Reserved")}{" "}
-                 
+                  Copyright &copy;{currentYear} Copyly. {translate("All Rights Reserved")}{" "}               
                 </p>
               </div>
 
               <div className="col-lg-6 col-md-6 col-sm-6">
                 <ul>
                   <li>
-                    <Link href="/privacy-policy">Privacy Policy</Link>
+                    <Link href="/privacy-policy">{translate("Privacy Policy")}</Link>
                   </li>
                   <li>
-                    <Link href="/terms-conditions">Terms & Conditions</Link>
+                    <Link href="/terms-conditions">{translate("Terms & Conditions")}</Link>
                   </li>
                 </ul>
               </div>

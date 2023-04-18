@@ -4,21 +4,18 @@ import {useTranslation} from "next-i18next";
 
 const ComputerVisionAI = () => {
   const { t: translate } = useTranslation('Home')
-  return (
-      <>
-        <div className="computer-vision-ai-area ptb-100">
+  return ( 
+        <div id="use_cases" className="computer-vision-ai-area ptb-100">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12">
                 <div className="computer-vision-ai-content">
                   <h3>
-                    {translate("What")}<span> {translate("Amazing ")}</span>
+                    {translate("What ")}<span> {translate("Amazing" )}</span>
                     {translate("content will you create with Copyly ?")}
                   </h3>
                   <p>
-                    {translate("We've trained our AI with the knowledge of top content writers and conversion \n" +
-                        "experts. So you can be sure that the content produced will live up to your expectations. Copyly \n" +
-                        "writes content for your website or social media posts and you select the best content.\n")}
+                    {translate("We've trained our AI with the knowledge of top content writers and conversion experts. So you can be sure that the content produced will live up to your expectations. Copyly writes content for your website or social media posts and you select the best content.")}
                   </p>
 
                   <div className="row justify-content-center">
@@ -91,7 +88,7 @@ const ComputerVisionAI = () => {
             </div>
           </div>
         </div>
-      </>
+  
   );
 };
 
