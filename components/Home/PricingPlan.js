@@ -36,7 +36,7 @@ const PricingPlan = () => {
           <div className="section-title with-underline-text">
             <h2>
 
-            {translate("Start writing")} <b> {translate(" 10x faster")} </b>{translate(" with AI")}
+            {translate("Start writing ")} <b> {translate("10x faster")} </b>{translate(" with AI")}
             </h2>
             <p>
               {translate("Simple and affordable pricing. Boost your business with a powerful, reliable and complete tool adapted to the creation of unique content")}
@@ -220,7 +220,7 @@ const PricingPlan = () => {
                              <i className="fa-solid fa-check"
                              style={{color: "#03B5A9"}}
                              ></i> 
-                            {translate("Unlimited Projects")}
+                            {translate("Unlimited projects")}
                            </li>
                            <li>
                              <i className="fa-solid fa-check"
@@ -304,7 +304,7 @@ const PricingPlan = () => {
                              <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> 1  {translate("user seat")}
                            </li>
                            <li>
-                            <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> 1 {translate(" project")}
+                            <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> 1 {translate("project")}
                            </li>
                            <li>
                              <i className="fa-solid fa-check" style={{color: "#03B5A9"}}></i> {translate("all copywriting tools")}
@@ -353,11 +353,11 @@ const PricingPlan = () => {
                     </li>
                     <li>
                       <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
-                      {translate(" 5 user seats")}
+                      5  {translate("user seats")}
                     </li>
                     <li>
                       <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
-                    {translate("Unlimited projects")}
+                      {translate("Unlimited projects")}
                     </li>
                     <li>
                       <i className="fa-solid fa-check"  style={{color: "#03B5A9"}}></i> 
@@ -423,13 +423,13 @@ const PricingPlan = () => {
                              <i className="fa-solid fa-check" 
                              style={{color: "#03B5A9"}}
                              ></i> 
-                             {translate(" 25 user seats")}
+                              25  {translate("user seats")}
                            </li>
                            <li>
                              <i className="fa-solid fa-check"
                              style={{color: "#03B5A9"}}
                              ></i> 
-                            {translate("Unlimited Projects")}
+                            {translate("Unlimited projects")}
                            </li>
                            <li>
                              <i className="fa-solid fa-check"

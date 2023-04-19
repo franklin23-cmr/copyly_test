@@ -13,7 +13,7 @@ const Services = () => {
         <div className="container ">
           <div className="section-title with-underline-text">
             <h2>
-            {translate("Write")}  <b>  {translate("better")}</b>   {translate("content 10x faster")}
+            {translate("Write")}  <b>  {translate("better content")}</b>   {translate("10x faster")}
             </h2>
             <p>
             {translate("Say ‘goodbye’ to the blank page. Generate high-converting copy for all your campaigns with just a few clicks. Leverage AI to write your content and copy in seconds")}
@@ -80,8 +80,7 @@ const Services = () => {
                    {translate("Grammar check")}
                 </h3>
                 <p>
-                  {translate("Don't let bad grammar break your visitors' trust. Copyly checks and rewrites \n" +
-                      "your content.")} 
+                  {translate("Don't let bad grammar break your visitors trust. Copyly checks and rewrites your content")} 
                 </p>
 
 

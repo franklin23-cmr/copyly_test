@@ -24,7 +24,7 @@ const MainBanner = () => {
                   {translate("Write Better and 10x faster With")} <b>{translate('AI')}</b>
                 </span>
                 <h1>
-                  {translate('Create')} <span>{translate('Viral')}</span> {translate('Content, Adcopy & Posts in 5 seconds')}
+                  {translate('Create')} <span>{translate('Viral Content')}</span> {translate('Adcopy & Posts in 5 seconds')}
                 </h1>
                 <p>
                   {translate("Copyly allows you to generate the best texts, ads and posts in seconds")}
