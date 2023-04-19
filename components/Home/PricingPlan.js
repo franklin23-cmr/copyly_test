@@ -46,10 +46,9 @@ const PricingPlan = () => {
                 <div className="plans-btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14"><g fill="none" stroke="#ff4800" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 10.5l3 3l3-3"/><path d="M11.5.5h-2a4 4 0 0 0-4 4v9"/></g></svg>
                     <div className="plans_tbn_ajust">
-                      <p>{translate("Save up to 18%")}</p>
+                      <p>{translate("4 months free")}</p>
                       <div className="ai-about-content-btn">
 
-                   
                 </div>
                     </div>
                 </div>
@@ -127,7 +126,7 @@ const PricingPlan = () => {
 
                     <div className="pricing-header">
                       <h3>{translate("Premium")}</h3>
-                      <p>{translate("No commitment.")} <br /> </p>
+                      <p>{translate("No commitment")} <br /> </p>
                    </div>                   
                          <div className="price">
                            {translate("€45")} <span>/mo</span> 
@@ -190,7 +189,7 @@ const PricingPlan = () => {
                      <div className="pricing-header">
                            <h3>Business</h3>
                            <p>
-                             {translate("No commitment.")} <br /> 
+                             {translate("No commitment")} <br /> 
                            </p>
                          </div>
 
@@ -335,7 +334,7 @@ const PricingPlan = () => {
                 <div className="single-pricing-box active">
                     <div className="pricing-header">                
                       <h3>{translate("Premium")}</h3>
-                      <p>{translate(" No commitment.")} <br /> </p>
+                      <p>{translate("No commitment")} <br /> </p>
                     </div>
                     
                          <div className="price">
@@ -399,7 +398,7 @@ const PricingPlan = () => {
                      <div className="pricing-header">
                            <h3>{translate("Business")}</h3>
                            <p>
-                             {translate("No commitment.")} 
+                             {translate("No commitment")} 
                            </p>
                          </div>
 

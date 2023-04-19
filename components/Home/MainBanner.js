@@ -21,7 +21,7 @@ const MainBanner = () => {
                 <span className="sub-title">
 
 
-                  {translate("Write Better and 10x faster With")} <b>{translate('Ai')}</b>
+                  {translate("Write Better and 10x faster With")} <b>{translate('AI')}</b>
                 </span>
                 <h1>
                   {translate('Create')} <span>{translate('Viral')}</span> {translate('Content, Adcopy & Posts in 5 seconds')}
@@ -42,19 +42,19 @@ const MainBanner = () => {
             </div>
 
              <div className="col-lg-6 col-md-12">
-              <div className="ml-main-banner-image">
-                <img src="/images/home-eight/banner/main.png" alt="image" />
+              <div className="ml-main-banner-wrap-image">
+               <img src="/images/home-eight/banner/main.png" alt="image" /> 
 
 
-                <div className="circle-shape"></div>
+                 <div className="circle-shape"></div> 
 
-                <div className="wrap-shape">
+                 {/* <div className="wrap-shape">
                   <img src="/images/home-seven/banner/shape3.png" alt="image" />
-                </div>
+                </div>  */}
 
                 <div className="wrap-text">
                   <i className="fa-solid fa-check"></i>
-                  <span>{translate('Get Professional Solutions')}</span>
+                  <span>{translate('SEO optimized contents')}</span>
                 </div>
               </div>
             </div>

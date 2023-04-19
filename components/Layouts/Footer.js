@@ -22,7 +22,7 @@ const Footer = () => {
               >
                 <div className="logo">
                   <Link href="/">
-                    <img width={60} height={60}  src="/images/Logos_copyly/transparent_copyly_logo.png" alt="image" />
+                    <img width={50} height={60}  src="/images/Logos_copyly/transparent_copyly_logo.png" alt="image" />
                   </Link>
                   <p>
                    {translate("Automatically generate blog posts, website copy, landing pages and ad copy for your business in seconds. Use the power of Copyly, the most advanced AI writer, to increase your traffic and productivity")}

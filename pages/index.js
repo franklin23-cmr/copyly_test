@@ -21,7 +21,6 @@ const Index = () => {
   return (
     <>
     <TopHeader />
-
      <Navbar />
     <MainBanner />
     <FunFacts />

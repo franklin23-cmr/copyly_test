@@ -43,7 +43,7 @@ function Test_copy(props) {
         //        <p>language</p> <i class="fa-solid fa-chevron-up"></i>
         // </div>
         <div class="dropup">
-          <button class="dropbtn">{locale === 'fr' ? "fancais" : "english"}</button>
+          <button class="dropbtn">{locale === 'fr' ? "Français" : "english"}</button>
 
           <div class="dropup-content">
             {/* <a href="#">francais</a>
