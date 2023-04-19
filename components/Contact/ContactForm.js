@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 import baseUrl from "../../utils/baseUrl";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const alertContent = () => {
@@ -36,7 +36,8 @@ const ContactForm = () => {
     setContact((prevState) => ({ ...prevState, [name]: value }));
     // console.log(contact)
   };
-  const {t: translate} =useTranslation()
+  const {t:translate} = useTranslation('Home')
+
   const handleSubmit = async (e) => {
   
     e.preventDefault();
@@ -55,11 +56,11 @@ const ContactForm = () => {
 
   function onChange(value) {
     setRecaptchaValue(value)
-    if(contact){
-      isDisabled(false)
-    }else{
-      alert("veuiller saisir tous les champs")
-    }
+    
+    const { name, email, number, subject, text } = contact;
+    const formIsValid = name && email && number && subject && text && value;
+  
+    isDisabled(!formIsValid);
   }
   
   return (
@@ -124,7 +125,7 @@ const ContactForm = () => {
                 name="text"
                 cols="30"
                 rows="6"
-                placeholder="Write your message..."
+                placeholder={translate("Write your message...")}
                 className="form-control"
                 value={contact.text}
                 onChange={handleChange}
@@ -138,9 +139,9 @@ const ContactForm = () => {
           />,
           <div className="col-lg-12 col-sm-12">
             {disabled 
-            ? <p> completed all the fields please </p> 
+            ? <p> {translate("completed all the fields please ")}</p> 
             :<button type="submit" className="btn btn-primary">
-              Send Message
+              {translate("Send Message")}
             </button>
             }
           </div>

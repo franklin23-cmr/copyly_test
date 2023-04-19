@@ -7,12 +7,14 @@ import ContactFormContent from "../components/Contact/ContactFormContent";
 
 import Footer from "../components/Layouts/Footer";
 import Navbar from "../components/Layouts/Navbar";
+import {serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
 
 const Contact = () => {
   
   return (
     <>
-      <Navbar />
+       <Navbar />
 
       <PageBanner
         pageTitle="Contact"
@@ -20,7 +22,7 @@ const Contact = () => {
         homePageText="Home"
         activePageText="Contact"
         bgImgClass="item-bg3"
-      />
+      /> 
      
 
       <ContactFormContent />
@@ -31,3 +33,16 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'Home',
+      ])),
+      // Will be passed to the page component as props
+    },
+  }
+}

@@ -1,9 +1,11 @@
 import React from "react";
 import ContactForm from "./ContactForm";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 const ContactFormContent = () => {
-  const {t:translate} = useTranslation()
+
+  const {t : translate} = useTranslation('Home')
+
   return (
     <>
       <section className="contact-area ptb-110">

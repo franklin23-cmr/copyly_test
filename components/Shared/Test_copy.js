@@ -48,10 +48,10 @@ function Test_copy(props) {
           <div class="dropup-content">
             {/* <a href="#">francais</a>
             <a href="#">english</a> */}
-            <Link href="/"  locale="fr">
+            <Link href=""  locale="fr">
               {t("french")}
             </Link>
-            <Link href="/" locale="en">
+            <Link href="" locale="en">
               {t("english")}
             </Link>
           </div>

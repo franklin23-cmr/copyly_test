@@ -12,7 +12,7 @@ const ComputerVisionAI = () => {
                 <div className="computer-vision-ai-content">
                   <h3>
                     {translate("What ")}<span> {translate("Amazing content")}  </span>
-                    {translate("will you create with Copyly ?")}
+                    {translate("will you create with Copyly?")}
                   </h3>
                   <p>
                     {translate("We've trained our AI with the knowledge of top content writers and conversion experts. So you can be sure that the content produced will live up to your expectations. Copyly writes content for your website or social media posts and you select the best content.")}
