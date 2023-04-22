@@ -141,7 +141,7 @@ const Navbar = () => {
 
                     <div className="about-btn">
                       <Link href="http://localhost:3000/" className="btn btn-primary" >
-                        Login
+                        {translate("Login")}
                       </Link>
                     </div>
                 </div>

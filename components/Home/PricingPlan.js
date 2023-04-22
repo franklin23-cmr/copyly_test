@@ -36,7 +36,7 @@ const PricingPlan = () => {
           <div className="section-title with-underline-text">
             <h2>
 
-            {translate("Start writing ")} <b> {translate("10x faster")} </b>{translate(" with AI")}
+            {translate("Start writing ")} <b>  {translate("10x faster")} </b>{translate(" with AI")}
             </h2>
             <p>
               {translate("Simple and affordable pricing. Boost your business with a powerful, reliable and complete tool adapted to the creation of unique content")}
