@@ -49,10 +49,10 @@ function Test_copy(props) {
             {/* <a href="#">francais</a>
             <a href="#">english</a> */}
             <Link href=""  locale="fr">
-              {t("french")}
+               Français
             </Link>
             <Link href="" locale="en">
-              {t("english")}
+                english
             </Link>
           </div>
           </div>

@@ -292,7 +292,7 @@ const PricingPlan = () => {
 
                         <div className="buy-btn">
                            <Link href="/" className="btn btn-primary">
-                           {translate(" Get started For €0")}
+                           {translate("Get started For €0")}
                            </Link>
                          </div>
 
@@ -343,7 +343,7 @@ const PricingPlan = () => {
                          
                         <div className="buy-btn">
                            <Link href="#" className="btn btn-primary">
-                           {translate(" Start free trial")}
+                           {translate("Start free trial")}
                            </Link>
                          </div>
                          <ul className="pricing-features">
@@ -403,7 +403,7 @@ const PricingPlan = () => {
                          </div>
 
                         <div className="price">
-                        €65 <span>/mo</span> 
+                          {translate("€65")} <span>/mo</span> 
                          </div>
 
                          <div className="buy-btn">
